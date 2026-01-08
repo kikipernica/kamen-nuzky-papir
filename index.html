@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Kámen Nůžky Papír Tapír Spock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game">
+
+  <h1>Kámen • Nůžky • Papír • Tapír • Spock</h1>
+
+  <div class="modes">
+    <button class="mode active" data-mode="cpu">🤖 vs Počítač</button>
+    <button class="mode" data-mode="pvp">👥 vs Hráč</button>
+  </div>
+
+  <div class="choices">
+    <button data-choice="kámen"><div class="icon"><img src="images/kamen.png"></div></button>
+    <button data-choice="nůžky"><div class="icon"><img src="images/nuzky.png"></div></button>
+    <button data-choice="papír"><div class="icon"><img src="images/papir.png"></div></button>
+    <button data-choice="tapír"><div class="icon"><img src="images/tapir.png"></div></button>
+    <button data-choice="spock"><div class="icon"><img src="images/spock.png"></div></button>
+  </div>
+
+  <div class="show-choices" id="show-choices"></div>
+
+  <div class="result" id="result">Vyber tah</div>
+
+  <div class="stats" id="stats-cpu">
+    <div>🧑 Hráč: <b id="player-wins">0</b> výhry / <b id="player-draws">0</b> remízy / <b id="player-losses">0</b> prohry</div>
+    <div>🤖 Robot: <b id="cpu-wins">0</b> výhry / <b id="cpu-draws">0</b> remízy / <b id="cpu-losses">0</b> prohry</div>
+  </div>
+
+  <div class="stats" id="stats-pvp" style="display:none;">
+    <div>🧑 Hráč 1: <b id="p1-wins">0</b> výhry / <b id="p1-draws">0</b> remízy / <b id="p1-losses">0</b> prohry</div>
+    <div>🧑 Hráč 2: <b id="p2-wins">0</b> výhry / <b id="p2-draws">0</b> remízy / <b id="p2-losses">0</b> prohry</div>
+  </div>
+
+  <button class="reset" id="reset">Reset hry</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
