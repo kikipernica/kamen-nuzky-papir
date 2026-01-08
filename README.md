@@ -1,0 +1,1 @@
+# kamen-nuzky-papir
